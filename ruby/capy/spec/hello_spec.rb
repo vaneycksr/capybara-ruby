@@ -5,7 +5,7 @@ describe 'Meu primeiro script' do
 
         # acessando o site  
         visit 'https://training-wheels-protocol.herokuapp.com'
-        puts 
+        
         expect(page.title).to eql 'Training Wheels Protocol'
     end
 
