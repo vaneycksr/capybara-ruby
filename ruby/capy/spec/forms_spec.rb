@@ -15,7 +15,10 @@ describe 'Forms' do
         # verificar se a mensagem de sucesso eh exibida
         expect(find('#flash').visible?).to be true
 
-        
+        # verificando se eh a mensagem esperada
+        #expect(find('#flash').text).to include 'Olá, Tony Stark. Você acessou a área logada!'
+
+        expect(find('#flash')).to have_content 'Olá, Tony Stark. Você acessou a área logada!'
 
     end
 
