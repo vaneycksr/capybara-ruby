@@ -21,12 +21,10 @@ describe "Upload", :upload do
     expect(div_arquivo.text).to eql "arquivo.txt"
   end
 
-  it "upload de imagem" do
+  it "upload de imagem", :upload_imagem do
     attach_file("file-upload", @imagem)
 
     click_button "Upload"
-
-    sleep 3
 
     #buscar elemento da imagem
     img = find("#new-image")

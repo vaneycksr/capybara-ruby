@@ -19,4 +19,7 @@ end
 Capybara.configure do |config|
   config.default_driver = :selenium_chrome
   #config.default_driver = :selenium
+
+  # tempo maximo que o capybara aguarda ate um determinado elemento ser exibido na tela
+  config.default_max_wait_time = 5
 end
