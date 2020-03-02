@@ -1,4 +1,4 @@
-describe "Mouse Hover", :houvers do
+describe "Mouse Hover", :hovers do
   before(:each) do
     visit "https://training-wheels-protocol.herokuapp.com/hovers"
   end
