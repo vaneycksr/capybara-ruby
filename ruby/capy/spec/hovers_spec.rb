@@ -4,7 +4,9 @@ describe "Mouse Hover", :hovers do
   end
 
   it "quando passo o mouse sobre o blade" do
-    card = find("img[alt=Blade]")
+
+    # contem Blade
+    card = find("img[alt*=Blade]")
 
     # metodo houver faz a função de passar o mouse pela imagem
     card.hover
@@ -14,7 +16,9 @@ describe "Mouse Hover", :hovers do
   end
 
   it "quando passo o mouse sobre o pantera negra" do
-    card = find('img[alt="Pantera Negra"]')
+
+    # começa com Pantera
+    card = find('img[alt^="Pantera"]')
 
     card.hover
 
@@ -22,7 +26,9 @@ describe "Mouse Hover", :hovers do
   end
 
   it "quando passo a mouse sobre o homem aranha" do
-    card = find('img[alt="Homem Aranha"]')
+
+    # termina com Aranha
+    card = find('img[alt$="Aranha"]')
 
     card.hover
 
