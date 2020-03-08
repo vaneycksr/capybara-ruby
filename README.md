@@ -1,5 +1,5 @@
 # capybara-ruby
-Curso da udemy com foco em automatizar testes para aplicações web com Ruby e Capybara
+Curso com foco em automatizar testes para aplicações web com Ruby e Capybara.
 
 Como utilizo o linux (Ubuntu), segue alguns comandos para colocar o driver do selenium nas varáveis de ambiente do sistema.
 
