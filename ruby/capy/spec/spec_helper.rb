@@ -22,4 +22,7 @@ Capybara.configure do |config|
 
   # tempo maximo que o capybara aguarda ate um determinado elemento ser exibido na tela
   config.default_max_wait_time = 5
+
+  # configurando url padrao
+  config.app_host = "https://training-wheels-protocol.herokuapp.com"
 end

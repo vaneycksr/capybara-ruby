@@ -1,12 +1,9 @@
+describe "Meu primeiro script", :smoke do
+  it "visitar a página" do
 
-describe 'Meu primeiro script' do
+    # acessando o site
+    visit "/"
 
-    it 'visitar a página' do
-
-        # acessando o site  
-        visit 'https://training-wheels-protocol.herokuapp.com'
-        
-        expect(page.title).to eql 'Training Wheels Protocol'
-    end
-
+    expect(page.title).to eql "Training Wheels Protocol"
+  end
 end

@@ -2,7 +2,7 @@ describe "Caixas de Seleção", :checkbox do
 
   # para todos os cenarios, ira passar por esse hook antes
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/checkboxes"
+    visit "/checkboxes"
   end
 
   it "marcando uma opção" do

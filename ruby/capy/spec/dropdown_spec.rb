@@ -1,6 +1,6 @@
 describe "Caixa de opções", :dropdown do
   it "item especifico simples" do
-    visit "https://training-wheels-protocol.herokuapp.com/dropdown"
+    visit "/dropdown"
 
     # select('Opção',from: 'elemento'), quando o dropdown possui um id
     select("Loki", from: "dropdown")
@@ -9,7 +9,7 @@ describe "Caixa de opções", :dropdown do
   end
 
   it "item especifico com o find" do
-    visit "https://training-wheels-protocol.herokuapp.com/dropdown"
+    visit "/dropdown"
 
     #buscar dentro dessa classe
     drop = find(".avenger-list")
@@ -21,7 +21,7 @@ describe "Caixa de opções", :dropdown do
   end
 
   it "qualquer item", :sample do
-    visit "https://training-wheels-protocol.herokuapp.com/dropdown"
+    visit "/dropdown"
 
     drop = find(".avenger-list")
 

@@ -1,6 +1,6 @@
 describe "Upload", :upload do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/upload"
+    visit "/upload"
 
     # retorna o caminho relativo da pasta do projeto (serve para qualquer sistema operacional)
     # a variavel com o @ eh uma variavel de instancia

@@ -1,6 +1,6 @@
 describe "Login com Cadastro", :login3 do
   before(:each) do
-    visit "https://training-wheels-protocol.herokuapp.com/access"
+    visit "/login2"
   end
 
   # escopo serve para restringir busca de elementos em uma pagina, evitando
