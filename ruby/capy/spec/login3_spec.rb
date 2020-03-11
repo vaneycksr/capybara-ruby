@@ -1,6 +1,6 @@
 describe "Login com Cadastro", :login3 do
   before(:each) do
-    visit "/login2"
+    visit "/access"
   end
 
   # escopo serve para restringir busca de elementos em uma pagina, evitando

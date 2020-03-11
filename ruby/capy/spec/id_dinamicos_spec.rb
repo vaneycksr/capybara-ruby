@@ -1,6 +1,6 @@
 describe "IDs Dinâmicos", :ids_dinamicos do
   before(:each) do
-    visit "/login2"
+    visit "/access"
   end
 
   # buscando elementos com ids dinamicos
