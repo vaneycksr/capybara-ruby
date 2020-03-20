@@ -13,6 +13,13 @@ RSpec.configure do |config|
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
   config.include Capybara::DSL
+
+  # pra cada cenario, vai abrir a tela nessa resolucao
+  config.before(:example) do
+
+    # sempre testar com resolucao minima
+    page.current_window.resize_to(1280, 800)
+  end
 end
 
 # configurando o capybara
