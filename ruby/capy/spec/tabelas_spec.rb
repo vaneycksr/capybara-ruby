@@ -30,7 +30,7 @@ describe "Tabelas", :tabs, :smoke do
     # traz todas as td, mas salva na variavel apenas a que esta na terceira posicao
     movie = diesel.all("td")[2].text
 
-    expect(movie).to eql "Velozes e Furiosos"
+    expect(movie).to eql "Fast & Furious"
   end
 
   it "deve exibir o insta do Chris Evans" do

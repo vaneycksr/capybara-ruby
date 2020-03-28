@@ -24,7 +24,9 @@ RSpec.configure do |config|
   # pra cada cenario, tira um screenshot
   config.after(:example) do |e|
     nome = e.description.gsub(/[^A-Za-z0-9 ]/, "").tr(" ", "_")
-    page.save_screenshot("log/" + nome + ".png")
+
+    # tira o print apenas se o cenario falhar
+    page.save_screenshot("log/" + nome + ".png") if e.exception
   end
 end
 
