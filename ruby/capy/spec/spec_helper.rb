@@ -20,6 +20,12 @@ RSpec.configure do |config|
     # sempre testar com resolucao minima
     page.current_window.resize_to(1280, 800)
   end
+
+  # pra cada cenario, tira um screenshot
+  config.after(:example) do |e|
+    nome = e.description.gsub(/[^A-Za-z0-9 ]/, "").tr(" ", "_")
+    page.save_screenshot("log/" + nome + ".png")
+  end
 end
 
 # configurando o capybara
