@@ -32,6 +32,10 @@ end
 
 # configurando o capybara
 Capybara.configure do |config|
+
+  #configura o browser para ser executado sem ser aberto
+  #config.default_driver = :selenium_chrome_headless
+
   config.default_driver = :selenium_chrome
   #config.default_driver = :selenium
 

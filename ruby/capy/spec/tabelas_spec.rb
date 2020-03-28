@@ -40,7 +40,7 @@ describe "Tabelas", :tabs, :smoke do
     expect(insta).to eql "@teamcevans"
   end
 
-  it "deve selecionar Chris Pratt para remoção" do
+  it "deve selecionar Chris Pratt para remocao" do
     prat = find("table tbody tr", text: "Chris Pratt")
     prat.find("a", text: "delete").click
 
@@ -50,7 +50,7 @@ describe "Tabelas", :tabs, :smoke do
     expect(msg).to eql "Chris Pratt foi selecionado para remoção!"
   end
 
-  it "deve selecionar Chris Pratt para edição" do
+  it "deve selecionar Chris Pratt para edicao" do
     prat = find("table tbody tr", text: "Chris Pratt")
     prat.find("a", text: "edit").click
 
