@@ -1,7 +1,16 @@
 # capybara-ruby
 Curso com foco em automatizar testes para aplicações web com Ruby e Capybara.
 
-Como utilizo o linux (Ubuntu), segue alguns comandos para colocar o driver do selenium nas varáveis de ambiente do sistema.
+Na pasta do projeto:
+
+* Criar arquivo Gemfile
+	- origem do repositório onde vai buscar as gems
+
+Digitar os seguintes comandos na pasta do projeto
+* bundle install
+* rspec --init
+
+OBS: Como utilizo o linux (Ubuntu), segue alguns comandos para colocar o driver do selenium nas varáveis de ambiente do sistema.
 
 Após descompactar o driver, seguir os seguintes comandos.
 
