@@ -16,7 +16,7 @@ $ bundle install
 $ rspec --init
 ```
 
-> *OBS: Como utilizo o linux (Ubuntu), segue alguns comandos para colocar o driver do selenium nas varáveis de ambiente do sistema.*
+> *OBS: Como utilizo o linux (Ubuntu), segue alguns comandos para colocar o driver do selenium nas variáveis de ambiente do sistema.*
 
 ```
 Após descompactar o driver, seguir os seguintes comandos.
